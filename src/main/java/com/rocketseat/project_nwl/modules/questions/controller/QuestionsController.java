@@ -29,9 +29,8 @@ public class QuestionsController {
     public List<QuestionResultDTO> findByTechnology(@PathVariable String technology) {
         var result = this.questionsRepository.findByTechnology(technology);
 
-        var toMap = result.stream().map(question -> mapQuestionToDTO(question))
+        return result.stream().map(question -> mapQuestionToDTO(question))
         .collect(Collectors.toList());
-        return toMap;
     }
 
 
