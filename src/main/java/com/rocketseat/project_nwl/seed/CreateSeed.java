@@ -13,6 +13,7 @@ public class CreateSeed {
 
     private final JdbcTemplate jdbcTemplate;
 
+    @SuppressWarnings("null")
     public CreateSeed(DataSource dataSource) {
         this.jdbcTemplate = new JdbcTemplate(dataSource);
     }
