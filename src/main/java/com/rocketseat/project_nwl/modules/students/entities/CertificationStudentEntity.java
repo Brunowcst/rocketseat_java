@@ -5,7 +5,6 @@ import java.util.List;
 import java.util.UUID;
 
 import org.hibernate.annotations.CreationTimestamp;
-import org.hibernate.annotations.ManyToAny;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
